@@ -30,12 +30,21 @@ def check(b,mark,player):
     '''
     This function checks to see if there is a Tic Tac Toe based on player and player's mark.
     If no winner and all the spaces are used, then it ends the game by setting gameover to True.
+    Check list:
+    1.) across the top
+    2.) across the middle
+    3.) across the bottom
+    4.) down the left side
+    5.) down the middle
+    6.) down the right side
+    7.) diagonal top left to bottom right
+    8.) diagonal top right to bottom left
     :param b:
     :param mark:
     :param player:
     :return:
     '''
-    if (b[0] == b[1] == b[2] == mark) \
+    if (b[0] == b[1] == b[2] == mark)\
             or (b[3] == b[4] == b[5] == mark) \
             or (b[6] == b[7] == b[8] == mark) \
             or (b[0] == b[3] == b[6] == mark) \
